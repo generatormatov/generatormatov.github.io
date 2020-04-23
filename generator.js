@@ -1,14 +1,14 @@
 var randnumOne, randnumTwo;
 
-let matOne = ["Гнида", "Хуйня", "Конча", "Шалава", "Девочка", "Говноедка"];
-let matTwo = ["Ебаная", "Обтраханая", "Выебаная", "Обоссаная", "Конченная", "Тупая"];
+let matOne = ["Гнида", "Хуйня", "Конча", "Шалава", "Девочка", "Говноедка", "Гейша", "Курица", "Манда", "Залупа", "Гомосексуалка"];
+let matTwo = ["Ебаная", "Обтраханая", "Выебаная", "Обоссаная", "Конченная", "Тупая", "Некрасивая", "Задротская", "Ебнутая", "Жирная", "Дохлая"];
 
 function generate()
 {
 	getRandOne();
 }
 
-function getRandOne(min = 0, max = 5)
+function getRandOne(min = 0, max = 10)
 {
    randnumOne = Math.floor(Math.random() * (max - min)) + min;
    Math.round(randnumOne/5)*5;
@@ -16,7 +16,7 @@ function getRandOne(min = 0, max = 5)
    getRandTwo();
 }
 
-function getRandTwo(min = 0, max = 5)
+function getRandTwo(min = 0, max = 10)
 {
    randnumTwo = Math.floor(Math.random() * (max - min)) + min;
    //alert (randnumTwo);
